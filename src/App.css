@@ -1,0 +1,136 @@
+.App{
+  background-image: url('./src/assets/React--1-.webp');
+  height:738px;
+  width: 1528px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-bar-container {
+  padding-top: 20vh;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+:root {
+  background: #242526;
+  accent-color: #484a4d;
+  border: 1px solid #474a4d;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(#dadce1);
+  text-decoration: none;
+}
+
+.navbar {
+  height: 60px;
+  background-color: var(background);
+  padding: 0 1rem;
+  border-bottom: var(border);
+}
+
+.navbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  width: calc(var(60px) *0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button {
+  size: calc(var(60px) * 0.5);
+  width: var(size);
+  height: var(size);
+  background-color: #484a4d;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+}
+
+.icon-button:hover {
+  filter: brightness(1.2);
+  
+}
+
+.icon-button svg {
+  fill: var(color);
+  width: 20px;
+  height: 20px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 58px;
+  width: 300px;
+  transform: translateX(-45%);
+  background-color: #d4e1f5;
+  border: var(border);
+  border-radius: var(border-radius);
+  padding: 1rem;
+  overflow: hidden;
+  color: aliceblue;
+
+}
+
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(border-radius);
+  transition: background var(300ms);
+  padding: 0.5rem;
+
+}
+
+.menu-item:hover {
+  background-color: #525357;
+}
+
+.icon-right {
+  margin-left: auto;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(300ms) ease;
+  
+}
+.menu-primary-exit {
+  position: absolute;
+  
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(300ms) ease;
+}
