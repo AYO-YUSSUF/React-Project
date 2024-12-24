@@ -134,3 +134,47 @@ a {
   transform: translateX(-110%);
   transition: all var(300ms) ease;
 }
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .App {
+    height:fit-content;
+    background-size:cover;
+  }
+
+  .search-bar-container {
+    height:fit-content;
+    width: 90%;
+    padding-top: 10vh;
+  }
+
+  .navbar-nav {
+    flex-direction:row;
+    justify-content:flex-end;
+  }
+}
+
+/* Medium devices (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .App {
+    height: fit-content;
+  }
+
+  .search-bar-container {
+    width: 70%;
+  }
+
+  .navbar-nav {
+    justify-content: space-between;
+  }
+}
+
+/* Large devices (1025px and up) */
+@media only screen and (min-width: 1025px) {
+  .App {
+    height: 738px;
+  }
+
+  .search-bar-container {
+    width: 40%;
+  }
+}
