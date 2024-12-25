@@ -5,3 +5,14 @@
 .search-result:hover {
     background-color: #efefef;
 }
+
+@media screen and (max-width: 600px) {
+    .search-result {
+      width: 90%; 
+      left: 5%;  
+      max-height: 150px;
+      font-size: 12px; 
+      padding: 8px;
+    }
+  
+  }
