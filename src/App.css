@@ -1,14 +1,17 @@
-.App{
-  background-image: url('./assets/React--1-.webp');
-  height:738px;
-  width: 1528px;
+.App {
+  background-image: url('./src/assets/React--1-.webp');
+  height: 738px;
+  width: 100%;
+  max-width: 1528px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
 }
 
 .search-bar-container {
   padding-top: 20vh;
-  width: 40%;
+  width: 80%;
+  max-width: 600px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -49,7 +52,7 @@ a {
 }
 
 .nav-item {
-  width: calc(var(60px) *0.8);
+  width: calc(var(60px) * 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +74,6 @@ a {
 
 .icon-button:hover {
   filter: brightness(1.2);
-  
 }
 
 .icon-button svg {
@@ -83,7 +85,8 @@ a {
 .dropdown {
   position: absolute;
   top: 58px;
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   transform: translateX(-45%);
   background-color: #d4e1f5;
   border: var(border);
@@ -91,7 +94,6 @@ a {
   padding: 1rem;
   overflow: hidden;
   color: aliceblue;
-
 }
 
 .menu-item {
@@ -101,7 +103,6 @@ a {
   border-radius: var(border-radius);
   transition: background var(300ms);
   padding: 0.5rem;
-
 }
 
 .menu-item:hover {
@@ -119,26 +120,27 @@ a {
 .menu-primary-enter {
   position: absolute;
   transform: translateX(-110%);
-
 }
+
 .menu-primary-enter-active {
   transform: translateX(0%);
   transition: all var(300ms) ease;
-  
 }
+
 .menu-primary-exit {
   position: absolute;
-  
 }
+
 .menu-primary-exit-active {
   transform: translateX(-110%);
   transition: all var(300ms) ease;
 }
+
 /* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .App {
     height:700px;
-    background-size:cover;
+    background-size: cover;
   }
 
   .search-bar-container {
@@ -148,8 +150,8 @@ a {
   }
 
   .navbar-nav {
-    flex-direction:inherit;
-    justify-content:right;
+    flex-direction: inherit;
+    justify-content: right;
   }
 }
 
@@ -178,3 +180,4 @@ a {
     width: 40%;
   }
 }
+
