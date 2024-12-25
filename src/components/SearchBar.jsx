@@ -32,7 +32,7 @@ export const SearhBar = ({setResults}) => {
             <input
              placeholder="Enter to Search.." 
              value={input} 
-             onChange={(e) => handleChange(e.target.value)} />
+             onInput={(e) => handleChange(e.target.value)} />
 
         </div>
     );
