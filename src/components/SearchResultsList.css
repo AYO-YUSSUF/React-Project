@@ -8,15 +8,14 @@
     margin-top: 1rem;
     max-height: 300px;
     overflow-y: scroll;
-    padding: 0.5rem;
-    transition: all 0.3s ease-in-out;
+    
 }
 
 @media screen and (max-width: 768px) {
     .results-list {
         max-height: 250px; 
         margin-top: 0.5rem;
-        padding: 0.4rem; 
+        
     }
 }
 
